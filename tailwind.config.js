@@ -8,7 +8,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#3B7321'
+        primary: '#3B7321',
+        secondary: '#036666',
+        gray: '#C7C7C7'
       },
       backgroundImage: {
         heroImg: "url('./assets/heroimg.png')"
