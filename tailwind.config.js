@@ -15,9 +15,11 @@ module.exports = {
       backgroundImage: {
         heroImg: "url('./assets/heroimg.png')"
       },
-
+    },
+    daisyui: {
+      themes: false,
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 }
 

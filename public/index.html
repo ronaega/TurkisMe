@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,13 +45,13 @@
     <!-- Hero Section -->
     <section id="Home" class="pt-36">
         <div class="container">
-            <div class="flex flex-wrap-reverse">
-                <div class="w-full self-center px-4 lg:w-1/3">
+            <div class="flex flex-wrap-reverse justify-between">
+                <div class="w-full self-center px-4 lg:w-1/2">
                     <h1 class=" font-bold text-4xl mb-5 lg:text-5xl ">Embark on a Language Learning Journey</h1>
                     <p class=" text-base mb-10">feel the excitement of discovering a new language with our online course. Interactive online language course that can bring you to a new adventure with language</p>
                     <a href="#" class="text-base font-bold text-white py-4 px-7 bg-primary rounded-full">Get Started</a>
                 </div>
-                <div class="w-full self-end px-4 lg:w-1/2 lg:ml-60">
+                <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mb-20 ">
                         <img src="./assets/heroimg.png" alt="Hero Image">
                     </div>
@@ -100,22 +100,20 @@
     <!-- End Our Feauture section -->
 
     <!-- Opini Section -->
-    <section id="Opini" class="pt-36 mb-20">
+    <section id="Opini" class="pt-36 mb-32">
         <div class="container">
             <div class="flex flex-wrap ">
-                <div class="relative flex flex-wrap-reverse justify-around w-full"><!--container dari image -->
-                    
-                    <div class=" w-full max-w-xs rounded-2xl">
+                <div id="#slide1" class="relative flex flex-wrap-reverse justify-around w-full py-10 lg:items-start">
+                    <div class="relative w-full max-w-xs rounded-2xl">
                         <img src="./assets/opiniimg.png" alt="Opini Image" class=" items-center object-cover rounded-2xl">
                     </div>
-                    <div class="absolute top-0 w-full max-w-xs h-[400px] bg-gray opacity-30 origin-bottom-left -rotate-12 -z-10 rounded-2xl"></div>
-                    <h1 class=" font-bold text-2xl mb-10 lg:text-5xl">What They Say About Us</h1> 
-                </div>
-                <div class="self-end w-full max-w-[760px]">
-                    
-                    <p class="text-justify">Language learning has always been a personal passion of mine, and TurkisMe has exceeded my expectations in every aspect. As a freelancer, having the flexibility to learn at my own pace and on my own schedule has been invaluable. The interactive exercises and comprehensive curriculum have made the learning process engaging and enjoyable. <br>
-                    </p>
-                    <p>Sarah Thompson, Freelance Writer</p>
+                    <div class="absolute w-full max-w-xs h-[400px] bg-gray opacity-30 origin-bottom-left -rotate-12 -z-10 rounded-2xl lg:left-28"></div>
+                    <div class="self-end w-full max-w-[760px] px-5 mb-10">
+                        <h1 class="font-bold text-4xl  mb-10 lg:text-5xl">What They Say About Us</h1> 
+                        <p class="text-justify lg:w-[65%]">Language learning has always been a personal passion of mine, and TurkisMe has exceeded my expectations in every aspect. As a freelancer, having the flexibility to learn at my own pace and on my own schedule has been invaluable. The interactive exercises and comprehensive curriculum have made the learning process engaging and enjoyable. <br>
+                        </p>
+                        <p class="mt-5">- Sarah Thompson, Freelance Writer -</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,17 +121,12 @@
     <!-- End Opini Section -->
 
     <!-- About Section -->
-    <section id="About" class="pt-30">
-        <div class="container m-0">
-            <div class="flex flex-wrap bg-secondary">
-                <div class="w-full">
-                    <h1 class=" font-bold text-4xl mb-5 lg:text-5xl text-white">What makes Us Different</h1>
-                    <p class="text-base text-white">Welcome to TurkisMe, where language learning becomes an exciting and enjoyable journey. We're thrilled to have you here! Our mission is to provide a warm and supportive environment that nurtures your language skills and helps you become fluent in no time. With our personalized learning paths, interactive exercises, and a diverse community of language enthusiasts, you'll feel inspired and motivated every step of the way. Whether you're a beginner or already proficient, we're here to cheer you on and celebrate your progress. Join our vibrant community today and let's embark on this incredible language learning adventure together!</p>
-                </div>
-                <div class="w-full">
-                    <img src="./assets/aboutimg.png" alt="About Image">
-                </div>
-            </div>
+    <section id="About" class="pt-30 pb-28 bg-slate-500 bg-no-repeat bg-cover lg:h-[806px]" style="background-image: url(./assets/aboutimg.png);">
+        <div class="container p-10">
+            <div class="flex flex-wrap items-center justify-center lg:flex-col lg:items-start ">
+                <h1 class="font-bold text-4xl mb-5 lg:text-5xl text-white mt-20 lg:mt-40">What makes Us Different</h1>
+                <p class="text-base mb-10 text-justify text-white lg:w-1/2">Welcome to TurkisMe, where language learning becomes an exciting and enjoyable journey. We're thrilled to have you here! Our mission is to provide a warm and supportive environment that nurtures your language skills and helps you become fluent in no time. With our personalized learning paths, interactive exercises, and a diverse community of language enthusiasts, you'll feel inspired and motivated every step of the way. Whether you're a beginner or already proficient, we're here to cheer you on and celebrate your progress. Join our vibrant community today and let's embark on this incredible language learning adventure together!</p>
+                <a href="#" class="text-base font-bold text-white py-4 px-7 bg-primary rounded-full">Learn More</a>
             </div>
         </div>
     </section>
