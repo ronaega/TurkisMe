@@ -1551,8 +1551,28 @@ html {
   position: relative;
 }
 
+.-left-10 {
+  left: -2.5rem;
+}
+
+.-right-5 {
+  right: -1.25rem;
+}
+
+.-top-5 {
+  top: -1.25rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.left-20 {
+  left: 5rem;
 }
 
 .right-4 {
@@ -1563,8 +1583,8 @@ html {
   top: 0px;
 }
 
-.top-10 {
-  top: 2.5rem;
+.top-44 {
+  top: 11rem;
 }
 
 .top-full {
