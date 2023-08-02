@@ -22,15 +22,31 @@
       </div>
 
       <div class="nav-content-2">
-        <nav class="navigation">
-          <a href="#">Home<span></span></a>
-          <a href="#">Material<span></span></a>
-          <a href="#">Program<span></span></a>
-          <a href="#">Contact<span></span></a>
+        <nav id="navigation">
+          <a class="navbar-list" href="#">Home<span></span></a>
+          <a class="navbar-list" href="#">Material<span></span></a>
+          <a class="navbar-list" href="#">Program<span></span></a>
+          <a class="navbar-list" href="#">Contact<span></span></a>
+          <i class="fas fa-times navbar" onclick="closemenu()"></i>
         </nav>
+        <i class="fas fa-bars navbar" onclick="openmenu()"></i>
         <a href="#" class="sign-up btn">Sign Up</a>
       </div>
     </div> 
+  </header>
+  <header id="media-header">
+    <div class="container-media-header">
+      <a href="#home" class="place-logo-media"><img src="./assets/images/TurkisMe.png" class="logo"></a>
+      <nav id="navigation">
+        <a class="navbar-list" href="#">Home<span></span></a>
+        <a class="navbar-list" href="#">Material<span></span></a>
+        <a class="navbar-list" href="#">Program<span></span></a>
+        <a class="navbar-list" href="#">Contact<span></span></a>
+        <i class="fas fa-times navbar" onclick="closemenu()"></i>
+      </nav>
+      <i class="fas fa-bars navbar" onclick="openmenu()"></i>
+    </div>
+    
   </header>
   
   <div id="landing-page">
@@ -261,10 +277,39 @@
         <a href="#" class="btn btn3">See more</a>
       </section>
     </section>
-    <section id="footer" class="div-parallax">
-
+    <section id="contact" class="div-parallax">
+      <div id="contact">
+        <div class="container">
+            <section class="row1">
+                <div class="contact-left animate">
+                    <h1 class="title sub-title title-contact">Contact Us</h1>
+                    <p class="text-social-contact"><i class="fa-regular fa-envelope icon-contact-text"></i>turkisme@gmail.com</p>
+                    <p class="text-social-contact"><i class="fa-brands fa-whatsapp icon-contact-text"></i>+62 857 9108 0612</p>
+                    <div class="social-icons">
+                        <a href="#" class="link-contact" target="_blank"><i class="fab fa-facebook icon-contact"></i></a>
+                        <a href="https://www.instagram.com/turkisme.id" class="link-contact" target="_blank"><i class="fab fa-instagram icon-contact"></i></a>
+                        <a href="#" class="link-contact" target="_blank"><i class="fab fa-linkedin icon-contact"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right animate">
+                    <form class="form-contact" name="submit-to-google-sheet">
+                        <input class="input-contact" type="text" name="Name" placeholder="Your Name" required>
+                        <input class="input-contact" type="email" name="Email" placeholder="Your Email" required>
+                        <textarea class="ta-contact" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn6">Submit</button>
+                    </form>
+                    <span id="msg-contact"></span>
+                </div>
+            </section>
+        </div>
+      </div>
+      
     </section>
+    <div id="footer">
+      <h2 class="footer-text">Copyright © TurkisMe. Made by Tampah Design</h2>
+    </div>
   </div>
+
   <script src="./assets/js/script.js"></script>
 </body>
 </html>
