@@ -9,7 +9,7 @@
   /** Background colors */
   --bg-blue-1: rgb(0, 35, 91);
   --bg-red-1: rgb(226, 24, 24);
-  --bg-red-2: rgb(255, 80, 80);
+  --bg-red-2: rgb(161, 1, 1);
   --bg-krem-1: rgb(255, 221, 131);
   --bg-blue-sky: rgb(152, 223, 214);
   --bg-white-1: rgb(255, 255, 255);
@@ -20,7 +20,7 @@
   --text-red-1: rgb(226, 24, 24);
   --text-krem-1: rgb(255, 221, 131);
   --text-blue-sky: rgb(152, 223, 214);
-  --text-white: rgb(255, 255, 255);
+  --text-white-1: rgb(255, 255, 255);
 
   /** Gradient colors */
   --gradient-1: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
@@ -394,13 +394,13 @@ body {
 
 .material-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
 .material-list div{
   background: var(--bg-blue-1);
-  color: var(--text-white);
+  color: var(--text-white-1);
   padding: 40px;
   font-size: var(--fontSize-3);
   font-weight: 300;
@@ -418,7 +418,7 @@ body {
 }
 .material-list div a{
   text-decoration: none;
-  color: var(--text-white);
+  color: var(--text-white-1);
   font-size: var(--fontSize-3);
   margin-top: 20px;
   display: inline-block;
@@ -1096,7 +1096,7 @@ body {
   }
   .material-list div a{
     text-decoration: none;
-    color: var(--text-white);
+    color: var(--text-white-1);
     font-size: var(--fontSize-3);
     margin-top: 20px;
     display: inline-block;
