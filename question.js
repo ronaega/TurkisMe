@@ -1,114 +1,114 @@
 let questions = [
     {
         numb: 1,
-        question: "Beni seviyor musun?",
-        answer: "C. Evet",
+        question: "Türkçenin kaç tane harfı vardır?",
+        answer: "D. 29",
         options: [
-            "A. Bilmiyorum",
-            "B. Düşünüyorum",
-            "C. Evet",
-            "D. Hayır"
+            "A. 26",
+            "B. 27",
+            "C. 28",
+            "D. 29"
         ]
     },
     {
         numb: 2,
-        question: "Benimle evlenir misin?",
-        answer: "B. Evet",
+        question: "Aşağıdaki ifadeler hangisi haber sorusu değil?",
+        answer: "C. Hazır mısın?",
         options: [
-            "A. Düşünüyorum",
-            "B. Evet",
-            "C. Hayır",
-            "D. Bilmiyorum"   
+            "A. Nasılsın?",
+            "B. Ne haber?",
+            "C. Hazır mısın?",
+            "D. Ne var ne yok?"   
         ]
     },
     {
         numb: 3,
-        question: "Benimle yaşlanır mısır?",
-        answer: "C. Evet",
+        question: "Ben şu an kampüse ...",
+        answer: "C. gidiyorum",
         options: [
-            "A. Bilmiyorum",
-            "B. Hayır",
-            "C. Evet",
-            "D. Düşünüyorum"
+            "A. gidiyorum",
+            "B. gittim",
+            "C. gidiyorum",
+            "D. gidiyorsun"
         ]
     },
     {
         numb: 4,
-        question: "Her sabah benim yanımda uyanır mısın?",
-        answer: "D. Evet",
+        question: "Okulda kim yok?",
+        answer: "B. Ördek",
         options: [
-            "A. Hayır",
-            "B. Düşünüyorum",
-            "C. Bilmiyorum",
-            "D. Evet"
+            "A. Öğrenci",
+            "B. Ördek",
+            "C. Öğretmen",
+            "D. Genç"
         ]
     },
     {
         numb: 5,
-        question: "Benimle beraber cennete gider misin?",
-        answer: "A. Evet",
+        question: "Biz yemek istiyoruz. ... beraber gideceğiz.",
+        answer: "D. Lokantaya",
         options: [
             
-            "A. Evet",
-            "B. Düşünüyorum",
-            "C. Hayır",
-            "D. Bilmiyorum"
+            "A. Okula",
+            "B. Karakola",
+            "C. Müzeye",
+            "D. Lokantaya"
         ]
     },
     {
         numb: 6,
-        question: "Beni seviyor musun?",
-        answer: "C. Evet",
+        question: "Aşağıdaki cümle hangisi yanlıştır?",
+        answer: "A. Benim arabam çok güzelim",
         options: [
-            "A. Bilmiyorum",
-            "B. Düşünüyorum",
-            "C. Evet",
-            "D. Hayır"
+            "A. Benim arabam çok güzelim",
+            "B. Seni görüyorum, çok iyiyim",
+            "C. Senin gibi bir kız bulamadım",
+            "D. Siz beni tanıyor musunuz?"
         ]
     },
     {
         numb: 7,
-        question: "Benimle evlenir misin?",
-        answer: "B. Evet",
+        question: "Biz .... . Hastanede çalışıyoruz.",
+        answer: "B. doktoruz",
         options: [
-            "A. Düşünüyorum",
-            "B. Evet",
-            "C. Hayır",
-            "D. Bilmiyorum"   
+            "A. itfaıyeciyim",
+            "B. doktoruz",
+            "C. gazeteciyiz",
+            "D. aşçıyım"   
         ]
     },
     {
         numb: 8,
-        question: "Benimle yaşlanır mısır?",
-        answer: "C. Evet",
+        question: "Aşağıdaki cümle hangisi yanlıştır?",
+        answer: "D. O çok çalışkan, kitap okumak seviyor",
         options: [
-            "A. Bilmiyorum",
-            "B. Hayır",
-            "C. Evet",
-            "D. Düşünüyorum"
+            "A. Yarın pikniğe kimse gelmeyecek",
+            "B. Seninle yaşlanmak istiyorum",
+            "C. Senden çok şey öğrendim",
+            "D. O çok çalışkan, kitap okumak seviyor"
         ]
     },
     {
         numb: 9,
-        question: "Her sabah benim yanımda uyanır mısın?",
-        answer: "D. Evet",
+        question: "Bir saat önce bu yemek çok sıcaktı. Ama şimdi ...",
+        answer: "C. Soğuk",
         options: [
-            "A. Hayır",
-            "B. Düşünüyorum",
-            "C. Bilmiyorum",
-            "D. Evet"
+            "A. Sımsıcak",
+            "B. Güzel",
+            "C. Soğuk",
+            "D. Sakin"
         ]
     },
     {
         numb: 10,
-        question: "Benimle beraber cennete gider misin?",
-        answer: "A. Evet",
+        question: "Dün kaardeşimle çarşıya ...",
+        answer: "B. köştüm",
         options: [
             
-            "A. Evet",
-            "B. Düşünüyorum",
-            "C. Hayır",
-            "D. Bilmiyorum"
+            "A. gidiyorum",
+            "B. köştüm",
+            "C. geleceğim",
+            "D. gezdim"
         ]
     }
 ];
