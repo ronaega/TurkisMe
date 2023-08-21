@@ -1,0 +1,472 @@
+:root {
+
+    /*-----------------------------------*\
+        COLORS
+    \*-----------------------------------*/
+    
+    /* https://colorhunt.co/palette/00235be21818ffdd8398dfd6 */
+    
+      /** Background colors */
+      --bg-blue-1: rgb(0, 35, 91);
+      --bg-red-1: rgb(226, 24, 24);
+      --bg-red-2: rgb(161, 1, 1);
+      --bg-krem-1: rgb(255, 221, 131);
+      --bg-blue-sky: rgb(152, 223, 214);
+      --bg-white-1: rgb(255, 255, 255);
+    
+      /** Text colors */
+      --text-black: rgb(0, 0, 0);
+      --text-blue-1: rgb(0, 35, 91);
+      --text-red-1: rgb(226, 24, 24);
+      --text-krem-1: rgb(255, 221, 131);
+      --text-blue-sky: rgb(152, 223, 214);
+      --text-white-1: rgb(255, 255, 255);
+      --text-white-2: rgb(240, 240, 240);
+    
+      /** Gradient colors */
+      --gradient-1: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%);
+      --gradient-2: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+      --gradient-3: linear-gradient(0deg, #000d1a, transparent);
+    
+      /** Border colors */
+      --border-wild-blue-yonder: hsla(216, 33%, 68%, 1);
+      --border-prussian-blue: hsla(216, 33%, 20%, 1);
+      --border-white: hsl(0, 0%, 100%);
+      --border-white-alpha-15: hsla(0, 0%, 100%, 0.15);
+    
+      /** Default colors */
+      --white: hsl(0, 0%, 100%, 1);
+      --black: hsl(0, 0%, 0%, 1);
+    
+    /*-----------------------------------*\
+        TYPOGRAPHY
+    \*-----------------------------------*/
+    
+      /** Font family */
+      --fontFamily-noto_sans: 'Noto Sans', sans-serif;
+    
+      /** Font size */
+      --fontSize-1: .5rem;
+      --fontSize-2: .75rem;
+      --fontSize-3: 1rem;
+      --fontSize-4: 1.25rem;
+      --fontSize-5: 1.5rem;
+      --fontSize-6: 1.75rem;
+      --fontSize-7: 2rem;
+      --fontSize-8: 3rem;
+      --fontSize-9: 5rem;
+    
+      /** Font weight */
+      --weight-medium: 500;
+      --weight-semiBold: 600;
+      --weight-bold: 700;
+      --weight-extraBold: 800;
+    
+      /** Line height */
+      --lineHeight-1: 1.3;
+      --lineHeight-2: 1.5;
+      --lineHeight-4: 1.5;
+    
+    /*-----------------------------------*\
+        BOX SHADOW
+    \*-----------------------------------*/
+    
+      --shadow-1: 0 8px 20px 0 hsla(0, 0%, 0%, 0.05);
+      --shadow-2: 0px 3px 20px hsla(180, 90%, 43%, 0.2);
+    
+    /*-----------------------------------*\
+        BORDER RADIUS
+    \*-----------------------------------*/
+    
+      --radius-6: 6px;
+      --radius-8: 8px;
+      --radius-16: 16px;
+      --radius-48: 48px;
+      --radius-circle: 50%;
+      --radius-pill: 200px;
+    
+    }
+    
+    /*-----------------------------------*\
+        COMMON CSS
+    \*-----------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+input {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-white-1);
+    overflow: hidden;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, var(--bg-red-2), var(--bg-krem-1));
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    z-index: 6;
+    transition: 2s ease-in-out;
+}
+
+.forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sign-in-up {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+    transition: 1s .5s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transition: .2s .7s ease-in-out;
+}
+
+form.sign-in-form {
+    z-index: 2;
+}
+form.sign-up-form {
+    z-index: 1;
+    opacity: 0;
+}
+
+.title {
+    font-size: var(--fontSize-8);
+    color: var(--text-black);
+    margin-bottom: 10px;
+}
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: var(--text-white-2);
+    margin: 10px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 .5rem;
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: var(--text-blue-1);
+    font-size: var(--fontSize-4);
+}
+
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: var(--weight-semiBold);
+    font-size: var(--fontSize-3);
+    color: var(--text-blue-1);
+}
+
+.input-field input::placeholder {
+    color: var(--text-blue-1);
+    font-weight: var(--weight-medium);
+}
+
+.btn {
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer;
+    background: var(--bg-red-1);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: var(--weight-semiBold);
+    margin: 10px 0;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: var(--bg-red-2);
+
+}
+
+.social-text {
+    padding: .75rem 0;
+    font-size: var(--fontSize-3);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 46px;
+    width: 46px;
+    border: 1px solid var(--bg-blue-1);
+    border-radius: 50%;
+    margin: 0 .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: var(--bg-blue-1);
+    font-size: var(--fontSize-3);
+    transition: .3s;
+}
+
+.social-icon:hover {
+    color: var(--bg-red-2);
+    border-color: var(--bg-red-2);
+}
+
+.panels-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 7;
+}
+
+.left-panel {
+    pointer-events: all;
+    padding: 3rem 17% 2rem 12%;
+}
+.right-panel {
+    pointer-events: none;
+    padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content {
+    color: var(--text-white-1);
+    transition: 1s .5s ease-in-out;
+}
+
+.panel h3 {
+    font-weight: var(--weight-semiBold);
+    line-height: 1;
+    font-size: var(--fontSize-5);
+}
+.panel p {
+    font-size: var(--fontSize-3);
+    padding: .75rem 0;
+}
+
+.btn.transparent {
+    margin: 0;
+    background: none;
+    border: 2px solid #fff;
+    width: 130px;
+    height: 41px;
+    font-weight: var(--weight-semiBold);
+    font-size: var(--fontSize-2);
+}
+
+.image {
+    width: 100%;
+    transition: 1s .5s ease-in-out;
+}
+
+.right-panel .content,
+.right-panel .image {
+    transform: translateX(800px);
+}
+
+/* ----------------------------- *\
+    ANIMATION
+\* ----------------------------- */
+
+.container.sign-up-mode:before {
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+
+.container.sign-up-mode .left-panel .image,
+.container.sign-up-mode .left-panel .content {
+    transform: translateX(-800px);
+}
+
+.container.sign-up-mode .right-panel .image,
+.container.sign-up-mode .right-panel .content {
+    transform: translateX(0);
+}
+
+.container.sign-up-mode .left-panel {
+    pointer-events: none;
+}
+.container.sign-up-mode .right-panel {
+    pointer-events: all;
+}
+
+.container.sign-up-mode .sign-in-up {
+    left: 25%;
+}
+
+.container.sign-up-mode form.sign-in-form {
+    z-index: 1;
+    opacity: 0;
+}
+.container.sign-up-mode form.sign-up-form {
+    z-index: 2;
+    opacity: 1;
+}
+
+/* ----------------------------- *\
+    MEDIA RESPONSIVE
+\* ----------------------------- */
+
+@media (max-width: 900px) {
+    .container {
+        min-height: 800px;
+        height: 100vh;
+    }
+
+    .container::before {
+        width: 1500px;
+        height: 1500px;
+        left: 30%;
+        bottom: 68%;transform: translateX(-50%);
+        right: initial;
+        top: initial;
+        transition: 2s ease-in-out;
+    }
+
+    .sign-in-up {
+        width: 100%;
+        left: 50%;
+        top: 95%;
+        transform: translate(-50%, -100%);
+        transition: 1s .75s ease-in-out;
+    }
+
+    .panels-container {
+        z-index: 10;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    .panel {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2.5rem 8%;
+    }
+    .panel .content {
+        padding-right: 15%;
+        transition: 1s .9s ease-in-out;
+    }
+    .panel h3 {
+        font-size: var(--fontSize-3);
+    }
+    .panel p {
+        font-size: var(--fontSize-2);
+        padding: .5rem 0;
+    }
+
+    .btn.transparent {
+        width: 110px;
+        height: 35px;
+        font-size: var(--fontSize-2);
+    }
+
+    .image {
+        width: 200px;
+        transition: 1s .5s ease-in-out;
+    }
+
+    .left-panel {
+        grid-row: 1 / 2;
+    }
+    .right-panel {
+        grid-row: 3 / 4;
+    }
+
+    .right-panel .content,
+    .right-panel .image {
+        transform: translateY(300px);
+    }
+
+    .container.sign-up-mode:before {
+        transform: translate(-50%, 100%);
+        bottom: 32%;
+        right: initial;
+    }
+
+    .container.sign-up-mode .left-panel .content,
+    .container.sign-up-mode .left-panel .image {
+        transform: translateY(-300px);
+    }
+
+    .container.sign-up-mode .sign-in-up {
+        top: 5%;
+        transform: translate(-50%, 0);
+        left: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 0 1.5rem;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .panel .content {
+        padding: .5rem 1rem;
+    }
+
+    .container::before {
+        bottom: 72%;
+        left: 50%;
+    }
+
+    .container.sign-up-mode:before {
+        bottom: 28%;
+        left: 50%;
+    }
+}
